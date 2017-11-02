@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffff">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="56dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="- Quiz Ramadhan App -"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/green" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"
+                android:text="Yuk uji wawasan\nkeislaman kamu di sini.."
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="@color/green" />
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="250dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_green"
+                android:text="START"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:onClick="mulaiQuiz"/>
+
+            <Button
+                android:id="@+id/about"
+                android:layout_width="250dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_green"
+                android:text="ABOUT"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:onClick="about"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
